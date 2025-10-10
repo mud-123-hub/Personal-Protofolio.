@@ -1,0 +1,1549 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap');
+
+/* html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: "Noto Serif", serif;
+}
+
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #202e4d;
+    --tect-black-700: #504e70;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.logoSec {
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--bg-black-50);
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    text-transform: capitalize;
+    padding: 5px 10px;
+}
+
+.logo a span {
+    font-weight: normal;
+    font-family: sans-serif;
+    position: relative;
+    font-family: "Poppins";
+}
+
+.logo a {
+    font-family: "Clicker Script", cursive;
+    font-weight: bolder;
+    font-size: 50px;
+    color: var(--tect-black-900);
+    padding: 15px 20px;
+}
+
+.logo a::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-bottom: 8px solid var(--skin-color);
+    border-left: 8px solid var(--skin-color);
+    bottom: 0px;
+    left: 0px;
+}
+
+.logo a::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 8px solid var(--skin-color);
+    border-right: 8px solid var(--skin-color);
+    top: 0px;
+    right: 0px;
+}
+
+.navToggler {
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    position: fixed;
+    top: 20px;
+    left: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navToggler span {
+    height: 2px;
+    width: 25px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+
+.navToggler span::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 25px;
+    height: 2px;
+    background: var(--skin-color);
+    display: block;
+}
+
+.navToggler span::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 0px;
+    width: 25px;
+    height: 2px;
+    background: var(--skin-color);
+    display: block;
+}
+
+.nav {
+    list-style: none;
+    gap: 20px;
+    margin-top: 50px;
+    margin-left: -20px;
+}
+
+.nav li {
+    margin-top: 15px;
+    padding: 5px 15px;
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--tect-black-900);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.nav i {
+    margin-right: 8px;
+}
+
+.nav li a.active {
+    color: var(--skin-color);
+}
+
+.nav li a:hover {
+    color: var(--skin-color);
+}
+
+
+
+
+.mainSection {
+    height: 300vh
+}
+
+.contantSection {
+    height: 100vh;
+    background: var(--bg-black-900);
+    /* position: fixed; */
+    left: 270px;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    margin-left: 270px;
+}
+
+.contant {
+    width: 550px;
+    padding: 20px;
+    margin-left: -30px;
+
+}
+
+.contant .myName {
+    margin-top: 70px;
+    color: var(--tect-black-900);
+}
+
+.contant .myName span {
+    color: var(--skin-color);
+    font-size: 40px;
+    font-family: "Clicker Script", cursive;
+}
+
+.contant .myskills {
+    color: var(--tect-black-900);
+
+}
+
+.contant .myskills span {
+    color: var(--skin-color);
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.myParagraf {
+    margin-top: 20px;
+    color: var(--tect-black-700);
+}
+
+.icon {
+    margin-top: 20px;
+}
+
+.icon i {
+    font-size: 27px;
+    color: var(--tect-black-900);
+    transition: all 0.3s ease;
+}
+
+.icon i:hover {
+    color: var(--skin-color);
+    cursor: pointer;
+}
+
+.contant a {
+    color: var(--bg-black-900);
+    background: var(--skin-color);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.contant a:hover {
+    transform: scale(1.05);
+}
+
+.myImage {
+    height: 250px;
+    width: 160px;
+    margin-left: 30px;
+    border-radius: 10px;
+    margin-top: 100px;
+    display: block;
+}
+
+.frontImage {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.frontImage::before {
+    content: '';
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-left: 10px solid var(--skin-color);
+    border-bottom: 10px solid var(--skin-color);
+    bottom: 80px;
+    left: 0px;
+}
+
+.frontImage::after {
+    content: '';
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-top: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    top: 62px;
+    right: -30px;
+}
+
+.aboutSection {
+    height: 100vh;
+    width: 75%;
+    background: var(--bg-black-900);
+    position: relative;
+    left: 270px;
+    top: 0px;
+    padding-left: 20px;
+}
+
+.abutHeading {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 30px;
+    position: relative;
+}
+
+.abutHeading::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    background: var(--skin-color);
+    bottom: 0px;
+    left: 0px;
+}
+
+.abutHeading::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 41px;
+    background: var(--skin-color);
+    bottom: -7px;
+    left: 0px;
+}
+
+.contantAbout {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.aboutMe {
+    margin-top: 20px;
+    font-size: 27px;
+}
+
+.aboutMe span {
+    color: var(--skin-color);
+}
+
+.abutPara {
+    width: 690px;
+    color: var(--tect-black-700);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.infoAbutMe {
+    display: flex;
+    width: 100%;
+    padding-right: 25px;
+}
+
+.perInfo {
+    width: 50%;
+    margin-left: 15px;
+}
+
+.infoItem {
+    padding: 2px;
+    margin: 10px 10px;
+    border-bottom: 1px solid var(--bg-black-50);
+    width: 80%;
+}
+
+.infoItem span {
+    color: var(--tect-black-700);
+}
+
+.MySkill {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.Progres {
+    width: 100%;
+    height: 6px;
+    background-color: var(--bg-black-50);
+    border-radius: 4px;
+    display: flex;
+    margin-top: 6px;
+    margin-bottom: 15px;
+}
+
+.progressIn {
+    background: var(--skin-color);
+    height: 6px;
+    border-radius: 4px;
+}
+
+.skillPer {
+    margin-top: -30px;
+}
+
+.aboutSecBtn a {
+    margin-left: 30px;
+    background: var(--skin-color);
+    color: var(--bg-black-900);
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-size: 17px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.aboutSecBtn a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.expSection {
+    background: var(--bg-black-900);
+    margin-left: 270px;
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ejucation {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.ejuHadding {
+    margin-top: 15px;
+    margin-left: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.ejuHadding::before {
+    content: '';
+    height: 4px;
+    width: 55px;
+    background: var(--skin-color);
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    border-radius: 2px;
+}
+
+.ejuHadding::after {
+    content: '';
+    height: 4px;
+    width: 45px;
+    background: var(--skin-color);
+    position: absolute;
+    bottom: -12px;
+    left: 0px;
+    border-radius: 2px;
+}
+
+.mainEju {
+    width: 100%;
+    height: 380px;
+    margin-top: 70px;
+}
+
+.nameEju {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.ejutext {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 20px;
+    left: 0px;
+}
+
+.paraEju {
+    color: var(--tect-black-700);
+    width: 85%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--bg-black-50);
+    margin-left: 25px;
+    font-size: 15px;
+
+}
+
+.line {
+    border-left: 2px solid var(--skin-color);
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.lineDot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--skin-color);
+    position: relative;
+    right: 11px;
+    top: 0px;
+}
+
+.nameEju i {
+    color: var(--skin-color);
+}
+
+.exprience {
+    margin-top: 70px;
+}
+
+.exprience {
+    width: 50%;
+}
+
+.exoHadding {
+    margin-top: 15px;
+    margin-left: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.exoHadding::before {
+    content: '';
+    height: 4px;
+    width: 55px;
+    background: var(--skin-color);
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    border-radius: 2px;
+}
+
+.exoHadding::after {
+    content: '';
+    height: 4px;
+    width: 45px;
+    background: var(--skin-color);
+    position: absolute;
+    bottom: -12px;
+    left: 0px;
+    border-radius: 2px;
+}
+
+.projectSection {
+    margin-left: 270px;
+    height: 100vh;
+    width: 75%;
+    background: var(--bg-black-900);
+}
+
+.projectSection h2 {
+    margin-left: 20px;
+    position: relative;
+    font-size: 32px;
+    top: 0;
+    left: 0;
+}
+
+.projectSection h2::before {
+    content: '';
+    height: 4px;
+    width: 65px;
+    background: var(--skin-color);
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    border-radius: 2px;
+}
+
+.projectSection h2::after {
+    content: '';
+    height: 4px;
+    width: 55px;
+    background: var(--skin-color);
+    position: absolute;
+    bottom: -12px;
+    left: 0px;
+    border-radius: 2px;
+}
+
+.project-card {
+    margin-top: 40px;
+    height: 380px;
+    width: 250px;
+    /* padding: 0px 10px; */
+    padding-right: -10px;
+    margin-left: 30px;
+    border-right: 1px solid var(--bg-black-50);
+}
+
+.project-card img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: var(--tect-black-700);
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    font-size: 15px;
+    color: var(--bg-black-900);
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: var(--skin-color);
+    cursor: pointer;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contactSec {
+    margin-left: 270px;
+    padding-top: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.contactSec::before {
+    content: '';
+    height: 5px;
+    width: 65px;
+    border-radius: 6px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 75px;
+    left: 20px;
+}
+
+.contactSec::after {
+    content: '';
+    height: 5px;
+    width: 53px;
+    border-radius: 6px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 83px;
+    left: 20px;
+}
+
+.contact {
+    padding: 20px 20px;
+    background: var(--bg-black-900) !important;
+
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    margin-left: 135px;
+    margin-top: 10px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: darkred;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #121111;
+}
+
+.contact {
+    padding: 15px 20px;
+    background: #f9f9f9;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: darkred;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+    margin-left: -100px;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 70px;
+    z-index: 999;
+}
+
+.switch {
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.switch::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 3px;
+    transition: all 0.3s ease;
+}
+
+#dark-mode-toggle:checked+.switch {
+    background: #111;
+}
+
+#dark-mode-toggle:checked+.switch::after {
+    left: 27px;
+}
+
+.color-switcher {
+    position: fixed;
+    top: 20px;
+    right: 130px;
+    display: flex;
+    gap: 8px;
+    z-index: 999;
+}
+
+.color-btn {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+body.dark {
+    background-color: #0d1117;
+    color: #e6edf3;
+}
+
+body.dark .logo a {
+    color: #e6edf3;
+}
+
+body.dark .nav a {
+    color: #e6edf3;
+}
+
+body.dark .nav a.active {
+    color: var(--skin-color);
+}
+
+body.dark .btn {
+    background: var(--skin-color);
+    color: #fff;
+}
+
+body.dark-mode {
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    --text-black-900: #ffffff;
+    --tect-black-700: #cccccc;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    z-index: 1000;
+}
+
+.theme-toggle input {
+    display: none;
+}
+
+.switch {
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.switch::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#dark-mode-toggle:checked+.switch {
+    background: var(--skin-color);
+}
+
+#dark-mode-toggle:checked+.switch::before {
+    transform: translateX(25px);
+}
+
+
+body.dark-mode {
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff !important;
+}
+
+
+/* body.dark-mode p,
+body.dark-mode li,
+body.dark-mode a {
+    color: #dddddd !important;
+} */
+
+body.dark-mode a:hover {
+    color: var(--skin-color) !important;
+}
+
+body.dark-mode .btnNew:hover {
+    color: white !important;
+    opacity: 0.8;
+}
+
+body.dark-mode .card,
+body.dark-mode .section,
+body.dark-mode .projects-container,
+body.dark-mode .project-card {
+    background-color: #1a1a1a !important;
+    border-color: #2c2c2c !important;
+}
+
+body.dark-mode button,
+body.dark-mode a.btn,
+body.dark-mode .aboutSecBtn a {
+    background-color: var(--skin-color) !important;
+    color: #fff !important;
+}
+
+.mainSection>div {
+    min-height: 100vh;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.mainSection>div.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.mainSection>div.slide-out {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+@media ((min-width:320px) and (max-width:768px)) {
+
+    .navToggler {
+        height: 40px;
+        width: 45px;
+        border: 1px solid var(--bg-black-50);
+        position: fixed;
+        top: 11px;
+        left: 9px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 22px;
+    }
+
+    .logoSec {
+        left: -270px;
+        z-index: 9999;
+        position: fixed;
+    }
+
+    .logoSec.active {
+        left: 0;
+    }
+
+    .navToggler {
+        display: flex;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .color-switcher {
+        position: fixed;
+        right: 164px;
+    }
+
+    .theme-toggle {
+        position: fixed;
+        top: 19px;
+        right: 100px;
+        z-index: 1000;
+    }
+
+    .logo a {
+        font-family: "Clicker Script", cursive;
+        font-weight: bolder;
+        font-size: 38px;
+        color: var(--tect-black-900);
+        padding: 6px 9px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 50px;
+        text-transform: capitalize;
+        padding: 5px 10px;
+        margin-left: -3px;
+    }
+
+    .nav {
+        list-style: none;
+        gap: 20px;
+        margin-top: 80px;
+        margin-left: -18px;
+    }
+
+    .logoSec {
+        width: 173px;
+        height: 100vh;
+    }
+
+
+
+
+    .mainSection>div {
+        min-height: 186vh;
+        width: 100%;
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 0.7s ease, opacity 0.7s ease;
+    }
+
+    .contantSection {
+        height: 100vh;
+        background: var(--bg-black-900);
+        /* position: fixed; */
+        left: 270px;
+        top: 0px;
+        right: 0px;
+        display: block;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .contant .myName {
+        margin-top: 55px;
+        color: var(--tect-black-900);
+        font-size: 19px;
+        word-spacing: -2px;
+    }
+
+    .contant .myName span {
+        color: var(--skin-color);
+        font-size: 23px;
+        font-family: "Clicker Script", cursive;
+    }
+
+    .contant .myName {
+        margin-top: 67px;
+        color: var(--tect-black-900);
+        font-size: 17px;
+        word-spacing: -2px;
+    }
+
+    .contant {
+        width: 550px;
+        padding: 8px;
+        margin-left: 7px;
+    }
+
+    .contant .myskills {
+        color: var(--tect-black-900);
+        font-size: 19px;
+    }
+
+    .myParagraf {
+        margin-top: 18px;
+        color: var(--tect-black-700);
+        font-size: 13px;
+        width: 90%;
+    }
+
+    .color-switcher {
+        position: fixed;
+        right: 90px;
+        top: 38px;
+    }
+
+    .theme-toggle {
+        position: fixed;
+        top: 38px;
+        right: 31px;
+        z-index: 1000;
+    }
+
+    .contant {
+        width: fit-content;
+        padding: 8px;
+        margin-left: 7px;
+    }
+
+
+    .contant {
+        width: 100%;
+        padding: 0px;
+        margin-left: 0px;
+        padding-left: 14px;
+        padding-top: 15px;
+    }
+
+    .myImage {
+        height: 261px;
+        width: 189px;
+        margin-left: 62px;
+        border-radius: 10px;
+        margin-top: 21px;
+        display: block;
+    }
+
+    .frontImage::before {
+        bottom: -29px;
+        left: 33px;
+    }
+
+    .frontImage::after {
+        top: -9px;
+        right: -27px;
+    }
+
+    .contant a {
+        padding: 7px 20px;
+    }
+
+
+
+
+
+    .aboutSection {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    .abutHeading {
+        margin-left: 11px;
+        padding-top: 0px;
+        font-size: 28px;
+        position: relative;
+    }
+
+    .aboutMe {
+        margin-top: 16px;
+        font-size: 25px;
+    }
+
+    .aboutMe span {
+        color: var(--skin-color);
+        font-size: 26px;
+    }
+
+    .contantAbout {
+        margin-left: 1px;
+        padding: 5px;
+    }
+
+    .abutPara {
+        width: 90%;
+        color: var(--tect-black-700);
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .infoAbutMe {
+        display: inline;
+        width: 100%;
+        padding-right: 25px;
+    }
+
+    .MySkill {
+        width: 74%;
+        margin-left: 20px;
+        margin-top: 23px;
+    }
+
+    .perInfo {
+        width: 50%;
+        margin-left: 15px;
+        display: none;
+    }
+
+    .aboutSecBtn {
+        display: flex;
+    }
+
+    .aboutSecBtn a {
+        margin-left: 7px;
+        padding: 6px 12px;
+    }
+
+    .mainSection {
+        height: 500vh;
+        width: 100%;
+    }
+
+    .aboutSection.slide-in {
+        padding-top: 54px;
+    }
+
+
+
+    .expSection {
+        background: var(--bg-black-900);
+        margin-left: 0px;
+        width: 75%;
+        height: 100vh;
+        display: block;
+        justify-content: space-between;
+    }
+
+    .ejuHadding {
+        margin-top: 34px;
+        margin-left: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .ejucation {
+        width: 100%;
+        margin-left: -3px;
+    }
+
+    .nameEju {
+        font-size: 16px;
+        margin-top: 13px;
+        margin-left: 15px;
+    }
+
+    .paraEju {
+        color: var(--tect-black-700);
+        width: 81%;
+        padding-bottom: 9px;
+        border-bottom: 1px solid var(--bg-black-50);
+        margin-left: 25px;
+        font-size: 13px;
+        padding-top: 10px;
+    }
+
+    .exprience {
+        width: 100%;
+    }
+
+    .mainEju {
+        width: 100%;
+        height: 237px;
+        margin-top: 0px;
+    }
+
+    .mainSection {
+        height: 1100vh;
+        width: 100%;
+        background: var(--bg-black-900);
+    }
+
+    .ejuHadding {
+        margin-top: 103px;
+        margin-left: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .ejuHadding {
+        margin-left: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .abutSec {
+        margin-top: 29px;
+    }
+
+    .projectSection {
+        margin-left: 0px;
+    }
+
+    .projects-container {
+        display: inline;
+        justify-content: center;
+    }
+
+    .project-card img {
+        height: 208px;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .project-card h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .project-card p {
+        font-size: 13px;
+        color: var(--tect-black-700);
+        margin-bottom: 15px;
+    }
+
+    .project-card {
+        margin-top: 35px;
+        height: 380px;
+        width: 250px;
+        padding-right: -10px;
+        margin-left: 36px;
+        border-right: none;
+    }
+
+    .projectSection h2 {
+        padding-top: 70px;
+        margin-left: 20px;
+        position: relative;
+        font-size: 32px;
+        left: 0;
+    }
+
+    .contactSec {
+        margin-left: 0px;
+    }
+
+    section#contact {
+        margin-left: -10px;
+    }
+
+    .contactSec::after {
+        content: '';
+        height: 5px;
+        width: 53px;
+        border-radius: 6px;
+        background: var(--skin-color);
+        position: absolute;
+        top: 148px;
+        left: 25px;
+    }
+
+    .mainSection {
+        height: 1145vh;
+        width: 100%;
+        background: var(--bg-black-900);
+    }
+
+    section#contact {
+        margin-left: -10px;
+        padding: 36px;
+    }
+
+    .contact {
+        /* padding: 15px 20px; */
+        background: #f9f9f9;
+        margin-top: 706px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    .contact p {
+        font-size: 15px;
+        color: #555;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        font-size: 11px;
+        width: 250px;
+    }
+
+    .contact-form button {
+        padding: 11px;
+        width: 250px;
+    }
+
+    .contact p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 121px;
+        margin-left: 79px;
+        margin-top: 25px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        margin-top: 74px;
+    }
+
+    .contact p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 45px;
+        margin-left: 6px;
+        margin-top: 25px;
+    }
+
+    .contact p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 45px;
+        margin-left: 16px;
+        margin-top: 65px;
+    }
+
+    .contact-info {
+        margin-left: -66px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .mainSection {
+        height: 300vh;
+        width: 100%;
+        background: var(--bg-black-100);
+    }
+
+    .contantSection {
+        height: 114vh;
+        margin-left: 270px;
+        padding-left: 51px;
+        width: 96%;
+    }
+
+    .contant .myName {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    .contant .myskills {
+        color: var(--tect-black-900);
+        font-size: 27px;
+    }
+
+    .myParagraf {
+        margin-top: 20px;
+        color: var(--tect-black-700);
+        width: 443px;
+    }
+
+    .contant {
+        width: 550px;
+        padding: 3px;
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+
+    .myImage {
+        height: 261px;
+        width: 184px;
+        margin-left: -50px;
+        border-radius: 10px;
+        margin-top: 103px;
+        display: block;
+    }
+
+    .frontImage {
+        position: relative;
+        display: inline-block;
+        margin-top: 56px;
+        height: 105vh;
+    }
+
+    .frontImage::before {
+        bottom: 96px;
+        left: -97px;
+    }
+
+    .frontImage::after {
+        top: 62px;
+        right: -20px;
+    }
+
+    .myImage {
+        height: 261px;
+        width: 184px;
+        margin-left: -72px;
+        border-radius: 10px;
+        margin-top: 89px;
+        display: block;
+    }
+
+    .aboutSection {
+        height: 140vh;
+        width: 96%;
+    }
+
+    .abutHeading {
+        margin-left: 20px;
+        padding-top: 62px;
+        font-size: 38px;
+        position: relative;
+    }
+
+    .expSection {
+        background: var(--bg-black-900);
+        margin-left: 270px;
+        width: 96%;
+        height: 132vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ejuHadding {
+        margin-top: 13px;
+        margin-left: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 41px;
+    }
+
+    .projectSection {
+        margin-left: 270px;
+        height: 135vh;
+        width: 96%;
+        background: var(--bg-black-900);
+    }
+
+    .contactSec {
+        width: 96%;
+    }
+
+}
